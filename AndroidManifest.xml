@@ -32,9 +32,11 @@
         <activity
             android:name=".MotionGesturesActivity"
             android:label="@string/app_name"
+			android:launchMode="singleTop"
             android:theme="@style/Actions">
             <intent-filter>
-                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.settings.MOTION_GESTURES" />
             </intent-filter>
         </activity>
 
